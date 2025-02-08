@@ -1,3 +1,4 @@
+```
 portfolio/
 ├── frontend/                  # Frontend React application
 │   ├── public/               # Static files
@@ -26,3 +27,4 @@ portfolio/
 ├── .gitignore
 ├── README.md
 └── docker-compose.yml       # If using Docker
+```
