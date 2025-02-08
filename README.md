@@ -1,3 +1,41 @@
+# Portfolio
+
+This is a portfolio website built with React, Node.js, and integrated with LLM capabilities.
+
+## To run the project
+
+1. Clone the repository
+2. Install dependencies
+    a. `cd frontend`
+    b. `npm install`
+3. Start the frontend server
+    a. `cd frontend`
+    b. `npm run dev`
+
+
+## Features
+
+### Frontend
+- React
+- Tailwind CSS
+- React Router
+- React Hook Form
+- React Icons
+- React Scroll  
+
+### Backend
+- Node.js
+- Express
+- MongoDB
+- JWT Authentication    
+
+### LLM Integration
+- OpenAI API
+- LangChain
+- React-PDF
+
+## Project Structure
+
 ```
 portfolio/
 ├── frontend/                  # Frontend React application

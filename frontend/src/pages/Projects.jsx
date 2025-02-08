@@ -17,7 +17,6 @@ function Projects() {
       githubUrl: "https://github.com/yourusername/project-two",
       liveUrl: "https://project-two.com"
     },
-    // Add more projects as needed
   ];
 
   return (
