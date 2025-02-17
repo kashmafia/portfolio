@@ -10,7 +10,7 @@ This is a portfolio website built with React, Node.js, and integrated with LLM c
     b. `npm install`
 3. Start the frontend server
     a. `cd frontend`
-    b. `npm run dev`
+    b. `npm start`
 
 
 ## Features
@@ -33,6 +33,10 @@ This is a portfolio website built with React, Node.js, and integrated with LLM c
 - OpenAI API
 - LangChain
 - React-PDF
+
+#TO-DO
+- Add a chatbot component
+- Fix the backlight effect in Layout.jsx
 
 ## Project Structure
 

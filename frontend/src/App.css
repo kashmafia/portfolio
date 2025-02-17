@@ -1,3 +1,5 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -40,3 +42,83 @@
 .read-the-docs {
   color: #888;
 }
+
+body.light {
+    background-color: white;
+    color: black;
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+/* Link styles for light mode */
+body.light .navbar-link {
+    color: blue; /* Change to your desired color */
+}
+
+body.light .navbar-link:hover {
+    color: darkblue; /* Change to your desired hover color */
+}
+
+body.light .navbar-title-link {
+  color: blue; /* Change to your desired color */
+}
+
+body.light .navbar-title-link:hover {
+  color: darkblue; /* Change to your desired hover color */
+}
+
+/* Link styles for dark mode */
+body.dark .navbar-link {
+    color: lightblue; /* Change to your desired color */
+}
+
+body.dark .navbar-link:hover {
+    color: deepskyblue; /* Change to your desired hover color */
+}
+
+/* Link styles for dark mode */
+body.dark .navbar-title-link {
+  color: lightblue; /* Change to your desired color */
+}
+
+body.dark .navbar-title-link:hover {
+  color: deepskyblue; /* Change to your desired hover color */
+}
+
+body.light .footer-links {
+  color: deepskyblue; /* Change to your desired hover color */
+}
+
+body.dark .footer-links {
+  color: deepskyblue; /* Change to your desired hover color */
+}
+
+/* Footer styles for light mode */
+body.light .footer-links {
+    color: black; /* Text color */
+}
+
+body.light .footer-links a {
+    color: blue; /* Link color */
+}
+
+body.light .footer-links a:hover {
+    color: darkblue; /* Hover color */
+}
+
+/* Footer styles for dark mode */
+body.dark .footer-links {
+    color: white; /* Text color */
+}
+
+body.dark .footer-links a {
+    color: lightblue; /* Link color */
+}
+
+body.dark .footer-links a:hover {
+    color: deepskyblue; /* Hover color */
+}
+
