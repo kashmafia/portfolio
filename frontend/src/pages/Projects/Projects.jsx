@@ -1,3 +1,5 @@
+import './Projects.css';
+
 function Projects() {
   // You can move this to a separate data file later
   const projects = [
@@ -20,32 +22,29 @@ function Projects() {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">My Projects</h1>
+    <div className="projects-container">
+      <h1 className="projects-title">My Projects</h1>
       
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="projects-grid">
         {projects.map((project, index) => (
-          <div 
-            key={index} 
-            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-          >
+          <div key={index} className="project-card">
             <img 
               src={project.imageUrl} 
               alt={project.title}
-              className="w-full h-48 object-cover"
+              className="project-image"
             />
             
-            <div className="p-4">
-              <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
-              <p className="text-gray-600 mb-4">{project.description}</p>
+            <div className="project-content">
+              <h2 className="project-title">{project.title}</h2>
+              <p className="project-description">{project.description}</p>
               
-              <div className="mb-4">
-                <h3 className="text-sm font-medium mb-2">Technologies Used:</h3>
-                <div className="flex flex-wrap gap-2">
+              <div className="technologies-section">
+                <h3 className="technologies-title">Technologies Used:</h3>
+                <div className="technologies-container">
                   {project.technologies.map((tech, techIndex) => (
                     <span 
                       key={techIndex}
-                      className="bg-gray-100 text-gray-700 px-2 py-1 rounded-md text-sm"
+                      className="technology-tag"
                     >
                       {tech}
                     </span>
@@ -53,12 +52,12 @@ function Projects() {
                 </div>
               </div>
               
-              <div className="flex gap-4">
+              <div className="project-links">
                 <a
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 font-medium"
+                  className="project-link"
                 >
                   GitHub →
                 </a>
@@ -66,7 +65,7 @@ function Projects() {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 font-medium"
+                  className="project-link"
                 >
                   Live Demo →
                 </a>
@@ -76,7 +75,7 @@ function Projects() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Projects 
+export default Projects; 
