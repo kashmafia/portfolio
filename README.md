@@ -12,6 +12,9 @@ This is a portfolio website built with React, Node.js, and integrated with LLM c
     a. `cd frontend`
     b. `npm start`
 
+## To connect to the EC2 instance
+
+1. `ssh -i "kash.pem" ubuntu@ec2-13-53-190-10.eu-north-1.compute.amazonaws.com`
 
 ## Features
 

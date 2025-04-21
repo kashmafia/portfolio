@@ -1,13 +1,13 @@
 import './About.css';
-
+import AnimatedGradientText from '../../components/AnimatedGradientText/AnimatedGradientText.jsx';
 function About() {
   return (
     <div className="about-container">
-      <h1 className="about-title">About Me</h1>
+      <h1 className="about-title"><AnimatedGradientText text=" About Me" /></h1>
       
       <div className="about-grid">
         <div className="section-container">
-          <h2 className="section-title">Background</h2>
+          <h2 className="section-title"><AnimatedGradientText text="Background" /></h2>
           <p className="section-text">
             I'm a passionate full-stack developer with a focus on creating intuitive and efficient web applications. 
             With experience in modern web technologies, I enjoy solving complex problems and building user-friendly solutions.
