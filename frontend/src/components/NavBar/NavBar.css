@@ -1,87 +1,87 @@
 .navbar {
-    background-color: transparent; /* Make background transparent */
-    color: white;
-    padding: 1rem; /* p-4 */
-    position: sticky;
-    top: 0;
-    z-index: 50;
-  }
-  
-  .navbar a {
-    color: white;
-    margin: 0 1rem; /* Set equal margin on left and right */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-  }
-  
-  .navbar a:hover {
-    color: #e2e8f0; /* hover:text-gray-300 */
+	background-color: transparent; /* Make background transparent */
+	color: white;
+	padding: 1rem; /* p-4 */
+	position: sticky;
+	top: 0;
+	z-index: 50;
+}
+
+.navbar a {
+	color: white;
+	margin: 0 1rem; /* Set equal margin on left and right */
+	text-decoration: none; /* Remove underline */
+	transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+	color: #e2e8f0; /* hover:text-gray-300 */
 }
 
 /* New classes for flex and justify */
 .navbar-container {
-    display: flex; /* Use flexbox for horizontal alignment */
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Center items vertically */
-    padding: 1rem; /* Add padding if needed */
+	display: flex; /* Use flexbox for horizontal alignment */
+	justify-content: space-between; /* Space between items */
+	align-items: center; /* Center items vertically */
+	padding: 1rem; /* Add padding if needed */
 }
 
 .navbar-links {
-    display: flex;
-    gap: 1rem; /* Space between links */
+	display: flex;
+	gap: 1rem; /* Space between links */
 }
 
 .navbar-title-link {
-    display: flex;
-    gap: 1rem; /* Space between links */
-    font-size: 2.0rem;
+	display: flex;
+	gap: 1rem; /* Space between links */
+	font-size: 2.0rem;
 }
 
 .theme-toggle {
-    position: relative;
-    display: inline-block;
-    width: 80px; /* Increase width for better visibility */
-    height: 34px; /* Height of the toggle */
+	position: relative;
+	display: inline-block;
+	width: 80px; /* Increase width for better visibility */
+	height: 34px; /* Height of the toggle */
 }
 
 .theme-toggle input {
-    opacity: 0; /* Hide the default checkbox */
-    width: 0;
-    height: 0;
+	opacity: 0; /* Hide the default checkbox */
+	width: 0;
+	height: 0;
 }
 
 .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc; /* Light background */
-    transition: .4s; /* Smooth transition */
-    border-radius: 34px; /* Rounded corners */
-    display: flex; /* Use flexbox for icon alignment */
-    align-items: center; /* Center icons vertically */
-    justify-content: center; /* Center icons horizontally */
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc; /* Light background */
+	transition: .4s; /* Smooth transition */
+	border-radius: 34px; /* Rounded corners */
+	display: flex; /* Use flexbox for icon alignment */
+	align-items: center; /* Center icons vertically */
+	justify-content: center; /* Center icons horizontally */
 }
 
 .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px; /* Height of the toggle knob */
-    width: 26px; /* Width of the toggle knob */
-    left: 4px; /* Position of the knob */
-    bottom: 4px; /* Position of the knob */
-    background-color: white; /* Knob color */
-    transition: .4s; /* Smooth transition */
-    border-radius: 50%; /* Round knob */
+	position: absolute;
+	content: "";
+	height: 26px; /* Height of the toggle knob */
+	width: 26px; /* Width of the toggle knob */
+	left: 4px; /* Position of the knob */
+	bottom: 4px; /* Position of the knob */
+	background-color: white; /* Knob color */
+	transition: .4s; /* Smooth transition */
+	border-radius: 50%; /* Round knob */
 }
 
 /* Change background color and knob position when checked */
 input:checked + .slider {
-    background-color: #2196F3; /* Dark background */
+	background-color: #2196f3; /* Dark background */
 }
 
 input:checked + .slider:before {
-    transform: translateX(46px); /* Move knob to the right based on new width */
+	transform: translateX(46px); /* Move knob to the right based on new width */
 }

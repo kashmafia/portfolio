@@ -1,124 +1,123 @@
-@import '@fortawesome/fontawesome-free/css/all.css';
+@import "@fortawesome/fontawesome-free/css/all.css";
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+	height: 6em;
+	padding: 1.5em;
+	will-change: filter;
+	transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+	filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+	filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+	a:nth-of-type(2) .logo {
+		animation: logo-spin infinite 20s linear;
+	}
 }
 
 .card {
-  padding: 2em;
+	padding: 2em;
 }
 
 .read-the-docs {
-  color: #888;
+	color: #888;
 }
 
 body.light {
-    background-color: white;
-    color: black;
+	background-color: white;
+	color: black;
 }
 
 body.dark {
-    background-color: black;
-    color: white;
+	background-color: black;
+	color: white;
 }
 
 /* Link styles for light mode */
 body.light .navbar-link {
-    color: blue; /* Change to your desired color */
+	color: blue; /* Change to your desired color */
 }
 
 body.light .navbar-link:hover {
-    color: darkblue; /* Change to your desired hover color */
+	color: darkblue; /* Change to your desired hover color */
 }
 
 body.light .navbar-title-link {
-  color: blue; /* Change to your desired color */
+	color: blue; /* Change to your desired color */
 }
 
 body.light .navbar-title-link:hover {
-  color: darkblue; /* Change to your desired hover color */
+	color: darkblue; /* Change to your desired hover color */
 }
 
 /* Link styles for dark mode */
 body.dark .navbar-link {
-    color: lightblue; /* Change to your desired color */
+	color: lightblue; /* Change to your desired color */
 }
 
 body.dark .navbar-link:hover {
-    color: deepskyblue; /* Change to your desired hover color */
+	color: deepskyblue; /* Change to your desired hover color */
 }
 
 /* Link styles for dark mode */
 body.dark .navbar-title-link {
-  color: lightblue; /* Change to your desired color */
+	color: lightblue; /* Change to your desired color */
 }
 
 body.dark .navbar-title-link:hover {
-  color: deepskyblue; /* Change to your desired hover color */
+	color: deepskyblue; /* Change to your desired hover color */
 }
 
 body.light .footer-links {
-  color: deepskyblue; /* Change to your desired hover color */
+	color: deepskyblue; /* Change to your desired hover color */
 }
 
 body.dark .footer-links {
-  color: deepskyblue; /* Change to your desired hover color */
+	color: deepskyblue; /* Change to your desired hover color */
 }
 
 /* Footer styles for light mode */
 body.light .footer-links {
-    color: black; /* Text color */
+	color: black; /* Text color */
 }
 
 body.light .footer-links a {
-    color: blue; /* Link color */
+	color: blue; /* Link color */
 }
 
 body.light .footer-links a:hover {
-    color: darkblue; /* Hover color */
+	color: darkblue; /* Hover color */
 }
 
 /* Footer styles for dark mode */
 body.dark .footer-links {
-    color: white; /* Text color */
+	color: white; /* Text color */
 }
 
 body.dark .footer-links a {
-    color: lightblue; /* Link color */
+	color: lightblue; /* Link color */
 }
 
 body.dark .footer-links a:hover {
-    color: deepskyblue; /* Hover color */
+	color: deepskyblue; /* Hover color */
 }
-

@@ -1,32 +1,32 @@
 .footer {
-    background-color: transparent; /* bg-gray-800 */
-    color: white;
-    padding: 1rem; /* p-4 */
-    position: sticky;
-    bottom: 0;
-  }
-  
-  .footer a {
-    color: white;
-    margin-right: 1rem; /* space-x-4 */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-  }
-  
-  .footer a:hover {
-    color: #e2e8f0; /* hover:text-gray-300 */
-  }
+	background-color: transparent; /* bg-gray-800 */
+	color: white;
+	padding: 1rem; /* p-4 */
+	position: sticky;
+	bottom: 0;
+}
 
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px; /* Adjust as needed */
-    margin: 0 auto; /* Center the container */
-    padding: 0 1rem; /* Add horizontal padding */
-  }
+.footer a {
+	color: white;
+	margin-right: 1rem; /* space-x-4 */
+	text-decoration: none; /* Remove underline */
+	transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
 
-  .footer-links {
-    display: flex;
-    gap: 1rem; /* Space between links */
+.footer a:hover {
+	color: #e2e8f0; /* hover:text-gray-300 */
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px; /* Adjust as needed */
+	margin: 0 auto; /* Center the container */
+	padding: 0 1rem; /* Add horizontal padding */
+}
+
+.footer-links {
+	display: flex;
+	gap: 1rem; /* Space between links */
 }

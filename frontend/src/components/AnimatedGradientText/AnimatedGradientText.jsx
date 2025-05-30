@@ -1,20 +1,20 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from "react";
 
-const AnimatedGradientText = ({ 
-  text, 
-  colors = ['#ff0080', '#7928ca', '#ff4d4d'], 
-  className,
-  duration = 5 // duration in seconds, default is 3s
+const AnimatedGradientText = ({
+	text,
+	colors = ["#ff0080", "#7928ca", "#ff4d4d"],
+	className,
+	duration = 5, // duration in seconds, default is 3s
 }) => {
-  const spanRef = useRef(null);
+	const spanRef = useRef(null);
 
-  useEffect(() => {
-    if (spanRef.current) {
-      const style = document.createElement('style');
-      const randomId = `gradient-${Math.random().toString(36).substr(2, 9)}`;
-      spanRef.current.classList.add(randomId);
-      
-      style.textContent = `
+	useEffect(() => {
+		if (spanRef.current) {
+			const style = document.createElement("style");
+			const randomId = `gradient-${Math.random().toString(36).substr(2, 9)}`;
+			spanRef.current.classList.add(randomId);
+
+			style.textContent = `
         .${randomId} {
           background: linear-gradient(
             to right,
@@ -37,17 +37,17 @@ const AnimatedGradientText = ({
           }
         }
       `;
-      
-      document.head.appendChild(style);
-      return () => document.head.removeChild(style);
-    }
-  }, [colors, duration]);
 
-  return (
-    <span ref={spanRef} className={className}>
-      {text}
-    </span>
-  );
+			document.head.appendChild(style);
+			return () => document.head.removeChild(style);
+		}
+	}, [colors, duration]);
+
+	return (
+		<span ref={spanRef} className={className}>
+			{text}
+		</span>
+	);
 };
 
 export default AnimatedGradientText;
